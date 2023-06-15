@@ -1,0 +1,37 @@
+.tab-option {
+  box-shadow: gray;
+  /* max-width: 300px; */
+}
+.option-wrapper {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.tab-item {
+  display: flex;
+  margin-right: 24px;
+  padding: 12px 12px 20px 12px;
+}
+
+.tab-image-container {
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.tab-name {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tab-image {
+  height: 30px;
+  width: 30px;
+}
+
+.active-tab {
+  border-bottom: 2px solid salmon;
+}

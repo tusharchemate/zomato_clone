@@ -19,6 +19,8 @@ const Home = () => {
     }
   };
 
+  console.log(activeTab);
+
   return (
     <div>
       <Header />
