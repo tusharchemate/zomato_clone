@@ -1,0 +1,10 @@
+.collection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  margin: 30px;
+  border-radius: 50%;
+}

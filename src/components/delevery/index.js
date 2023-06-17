@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import Filters from '../common/filters';
+import DeleveryCollection from './deleveryCollectin';
 
 const filters = [
   {
@@ -37,6 +38,7 @@ const Delevery = () => {
     <div>
       <div>
         <Filters filters={filters} />
+        <DeleveryCollection />
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const Home = () => {
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
       {getActiveScreen(activeTab)}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
