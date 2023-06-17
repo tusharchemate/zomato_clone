@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Header from '../../components/common/header';
 import Tabs from '../../components/common/tabs';
 import Footer from '../../components/common/footer';
+import Delevery from '../../components/delevery';
+import DiningOut from '../../components/diningOut';
+import NightLife from '../../components/nightlife';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('Delivery');
@@ -9,23 +12,22 @@ const Home = () => {
   const getActiveScreen = (tab) => {
     switch (tab) {
       case 'Delivery':
-        return <div>Delivery</div>;
+        return <Delevery />;
       case 'Dining Out':
-        return <div>Dining Out</div>;
+        return <DiningOut />;
       case 'Night Life':
-        return <div>Night Life</div>;
+        return <NightLife />;
       default:
-        return <div>Delivery</div>;
+        return <Delevery />;
     }
   };
-
-  console.log(activeTab);
 
   return (
     <div>
       <Header />
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
       {getActiveScreen(activeTab)}
+
       <Footer />
     </div>
   );
