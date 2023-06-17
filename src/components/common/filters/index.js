@@ -1,7 +1,15 @@
-const Filters = () => {
+import React from 'react';
+import FilterItem from '../filter-items';
+import './index.css';
+
+const Filters = (props) => {
+  const { filters } = props;
+  console.log(filters);
   return (
-    <div>
-      <div>filters</div>
+    <div className="max-width filter">
+      {filters?.map((item) => (
+        <FilterItem filterItem={item} />
+      ))}
     </div>
   );
 };
